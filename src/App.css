@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+  background-color: #fff;
+  color: #000;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.todo--title {
+  font-size: 2.5rem;
+  font-weight: bolder;
+}
+
+.todo--group {
+  width: 70vw;
+  display: flex;
+}
+
+.todo--group input {
+  width: 80%;
+  outline: none;
+  border: 1px solid grey;
+  border-right: 0px;
+  padding: 1rem;
+}
+
+button {
+  color: #fff;
+  outline: none;
+  border: none;
+  background-color: #000;
+}
+
+.todo--group button {
+  width: 20%;
+  border: 1px solid grey;
+  border-left: 0px;
+  padding: 1.1rem;
+}
+
+.list {
+  margin-bottom: 1.5rem;
+  list-style: none;
+  display: flex;
+  gap: 30rem;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.remove {
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  .todo--group {
+    width: 70vw;
+  }
+
+  .todo--group input {
+    width: 70%;
+    padding: 0.6rem;
+  }
+
+  .todo--group button {
+    width: 30%;
+    padding: 0.7rem;
+  }
+
+  .list {
+    gap: 4rem;
+  }
+}
